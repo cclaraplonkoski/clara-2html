@@ -4,99 +4,289 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,
-500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-<title>Em busca da cidade sobrenatural</title>
+
+<title>Diários de um Vampiro – Fluxograma Interativo</title>
 </head>
+
 <body>
 <main>
+
+<!-- PASSO 0 — Introdução -->
 <div class="passo ativo" id="passo-0">
-<img src="img/cenario-passo0.png" alt="">
-<p>Um dia desses, dentro de um livro disfarçado de grimório na biblioteca da escola, eu descobri uma carta
-antiga sobre uma cidade sobrenatural, escondida pela magia das bruxas. Nessa carta, a
-bruxa que fez a magia deixa algumas pistas para encontrar essa cidade e eu decidi segui-las!</p>
-<button class="btn-proximo" data-proximo="1">Mystic Falls</button>
-<button class="btn-proximo" data-proximo="2">New Orleans</button>
+<img src="img/clara2.png" alt="" style="width: 90%;">
+<p>Bem-vindo ao mundo de Diários de um Vampiro!  
+Aqui você vai seguir perguntas que percorrem TODA a série.  
+Pronto para começar?</p>
+
+<button class="btn-proximo" data-proximo="1">Começar</button>
+<button class="btn-proximo" data-proximo="2">Não, estou com medo</button>
 </div>
+
+<!-- PASSO 1 — Temporada 1 -->
 <div class="passo" id="passo-1">
-<p>Você começa sua jornada por Mystic Falls, seguindo as estradas até a placa de entrada com o nome da cidade e, ao chegar, já sente uma energia muito forte.</p>
-<button class="btn-proximo" data-proximo="3">Viu que no GPS a cidade é inexistente e ir embora</button>
-<button class="btn-proximo" data-proximo="4">Entrar na cidade</button>
+<img src="img/clara3.jpg" alt="" style="width: 90%;">
+<p>Na 1ª temporada, Elena conhece os irmãos vampiros.  
+Com qual deles você acha que o rumo da história muda primeiro?</p>
+
+<button class="btn-proximo" data-proximo="3">Stefan</button>
+<button class="btn-proximo" data-proximo="4">Damon</button>
 </div>
+
+<!-- PASSO 2 — Final alternativo (desistiu) -->
 <div class="passo" id="passo-2">
-<p>Em Pernambuco, você visita a histórica cidade de Olinda. Na carta, uma das pistas
-indica que para localizar a entrada para a cidade perdida você deve procurar a próxima pista
-em um dos pontos turísticos da cidade. Por qual você começa?</p>
-<button class="btn-proximo" data-proximo="5">Investigar as igrejas antigas</button>
-<button class="btn-proximo" data-proximo="6">Explorar as praias próximas</button>
+<img src="img/clara8.jpeg" alt="" style="width: 90%;"> 
+<p>Você desistiu! Mas todos sabemos que ninguém sai de Mystic Falls tão fácil…</p>
 </div>
+
+<!-- PASSO 3 — Stefan -->
 <div class="passo" id="passo-3">
-<p>No topo do Pico da Tijuca, você encontra uma antiga inscrição apontando que a
-próxima pista está
-localizada no Amazonas.</p>
-<button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
+<img src="img/clara7.jpg" alt="" style="width: 90%;">
+<p>Stefan tenta proteger Elena, mas o passado dos irmãos volta.  
+Qual ameaça domina essa fase?</p>
+
+<button class="btn-proximo" data-proximo="5">Katherine retorna</button>
+<button class="btn-proximo" data-proximo="6">Mistérios sobre o passado dos Salvatore</button>
 </div>
+
+<!-- PASSO 4 — Damon -->
 <div class="passo" id="passo-4">
-<img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e
-desitindo da aventura">
-<p>Você decide que a aventura é grande demais e volta para casa, mas sempre se
-pergunta o que teria
-encontrado.</p>
+<img src="img/clara10.jpg" alt="" style="width: 90%;">
+<p>Damon entra causando caos, mas desenvolve sentimentos por Elena.  
+Como você acha que isso muda a série?</p>
+
+<button class="btn-proximo" data-proximo="5">Triângulo amoroso explode</button>
+<button class="btn-proximo" data-proximo="6">Segredos dos vampiros antigos surgem</button>
 </div>
 
+<!-- PASSO 5 — Temporada 2 / Katherine -->
 <div class="passo" id="passo-5">
-<p>Nas igrejas de Olinda, você descobre um mapa antigo escondido atrás de um altar,
-apontando que a próxima
-pista está no Amazonas.</p>
-<button class="btn-proximo" data-proximo="7">Viajar para o Amazonas</button>
-</div>
-<div class="passo" id="passo-6">
-<p>Explorando as praias, você encontra uma caverna escondida, mas ela leva a um beco
-sem saída.</p>
-<button class="btn-proximo" data-proximo="8">Voltar e explorar as igrejas</button>
-</div>
-<div class="passo" id="passo-7">
-<p>No Amazonas, a busca pela cidade perdida se intensifica. Você se depara com um rio
-bifurcado.</p>
-<button class="btn-proximo" data-proximo="9">Seguir pelo rio à esquerda</button>
-<button class="btn-proximo" data-proximo="10">Seguir pelo rio à direita</button>
-</div>
-<div class="passo" id="passo-8">
-<p>De volta às igrejas, você finalmente encontra o mapa antigo. Agora, para o
-Amazonas!</p>
-<button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
-</div>
-<div class="passo" id="passo-9">
-<p>O rio à esquerda leva você a uma cachoeira escondida com inscrições antigas que
-revelam a entrada da
-cidade perdida.</p>
-<button class="btn-proximo" data-proximo="11">Explorar a cidade perdida</button>
-</div>
-<div class="passo" id="passo-10">
-<p>O rio à direita termina em uma área pantanosa. Apesar de belas vistas, não há sinais
-da cidade perdida
-aqui.</p>
-<button class="btn-proximo" data-proximo="12">Retornar e tentar o outro
-rio</button>
-</div>
-<div class="passo" id="passo-11">
-<img src="img/cenario-passo11-cidade-perdida.png" alt="encontrando uma cidade
-maravilhosa perdida no Amazonas">
-<p>Dentro da cidade perdida, você descobre tesouros inimagináveis e decide se dedicar
-a estudar e preservar
-este lugar</p>
-</div>
-<div class="passo" id="passo-12">
+<img src="img/clara11.webp" alt="" style="width: 90%;">
+<p>A 2ª temporada traz lobisomens, a pedra da lua e a duplicata.  
+Elena corre perigo! O que você escolhe?</p>
 
-<p>Retornando e escolhendo o rio à esquerda, você finalmente encontra a cachoeira
-escondida e as inscrições
-que levam à cidade perdida.</p>
-<button class="btn-proximo" data-proximo="11">Explorar a cidade perdida</button>
+<button class="btn-proximo" data-proximo="7">Confiar em Bonnie</button>
+<button class="btn-proximo" data-proximo="8">Confiar em Damon</button>
 </div>
+
+<!-- PASSO 6 — Temporada 2 / Origem dos vampiros -->
+<div class="passo" id="passo-6">
+<img src="img/clara12.jpg" alt="" style="width: 90%;">
+<p>Descobrimos mais sobre o passado dos vampiros e surgem os Originais.  
+Quem é a maior ameaça?</p>
+
+<button class="btn-proximo" data-proximo="9">Klaus</button>
+<button class="btn-proximo" data-proximo="10">Elijah</button>
+</div>
+
+<!-- PASSO 7 — Temporada 3 / Feitiços -->
+<div class="passo" id="passo-7">
+<img src="img/clara13.jpg" alt="" style="width: 90%;">
+<p>Bonnie tenta salvar todos, mas mexer com magia sempre tem consequências.  
+O que você prioriza?</p>
+
+<button class="btn-proximo" data-proximo="11">Salvar Elena</button>
+<button class="btn-proximo" data-proximo="12">Destruir Klaus</button>
+</div>
+
+<!-- PASSO 8 — Temporada 3 / Escolha Damon -->
+<div class="passo" id="passo-8">
+<img src="img/clara14.jpg" alt="" style="width: 90%;">
+<p>Damon tenta proteger Elena de Klaus, mas isso aproxima os dois.  
+O que você acha que é mais importante?</p>
+
+<button class="btn-proximo" data-proximo="11">Salvar Elena</button>
+<button class="btn-proximo" data-proximo="12">Acabar com Klaus</button>
+</div>
+
+<!-- PASSO 9 — Klaus dominante -->
+<div class="passo" id="passo-9">
+<img src="img/clara15.png" alt="" style="width: 90%;">
+<p>Klaus domina tudo na 3ª temporada.  
+Como você lida com ele?</p>
+
+<button class="btn-proximo" data-proximo="13">Aliança temporária</button>
+<button class="btn-proximo" data-proximo="14">Luta direta</button>
+</div>
+
+<!-- PASSO 10 — Elijah diplomata -->
+<div class="passo" id="passo-10">
+<img src="img/clara16.jpg" alt="" style="width: 90%;">
+<p>Elijah tenta manter honra e equilíbrio.  
+Você confia nele?</p>
+
+<button class="btn-proximo" data-proximo="13">Sim</button>
+<button class="btn-proximo" data-proximo="14">Não</button>
+</div>
+
+<!-- PASSO 11 — Elena vira vampira -->
+<div class="passo" id="passo-11">
+<img src="img/clara17.jpg" alt="" style="width: 90%;">
+<p>Na 4ª temporada, Elena vira vampira.  
+Como você acha que ela lida com isso?</p>
+
+<button class="btn-proximo" data-proximo="15">Com Stefan</button>
+<button class="btn-proximo" data-proximo="16">Com Damon</button>
+</div>
+
+<!-- PASSO 12 — Tentam destruir Klaus -->
+<div class="passo" id="passo-12">
+<img src="img/clara19.webp" alt="" style="width: 90%;">
+<p>O plano para destruir Klaus falha e agora ele está ainda mais perigoso.  
+Pra onde seguir?</p>
+
+<button class="btn-proximo" data-proximo="17">Procurar os Caçadores</button>
+<button class="btn-proximo" data-proximo="18">Apoiar os Originais</button>
+</div>
+
+<!-- PASSO 13 — Aliança com Originais -->
+<div class="passo" id="passo-13">
+<img src="img/clara20.webp" alt="" style="width: 90%;">
+<p>Você se alia aos Originais para proteger a cidade.  
+O problema é: até quando confiar?</p>
+
+<button class="btn-proximo" data-proximo="19">Continuar com eles</button>
+<button class="btn-proximo" data-proximo="20">Abandoná-los</button>
+</div>
+
+<!-- PASSO 14 — Tentar lutar -->
+<div class="passo" id="passo-14">
+<img src="img/clara21.jpg alt=" style="width: 90%;">
+<p>A luta contra os Originais falha.
+Você precisa de uma nova estratégia.</p>
+
+<button class="btn-proximo" data-proximo="19">Cooperar com eles</button>
+</div>
+
+<!-- PASSO 15 — Elena + Stefan -->
+<div class="passo" id="passo-15">
+<img src="img/clara6.jpg" alt="" style="width: 90%;">
+<p>Elena tenta manter sua humanidade com Stefan.  
+Mas o destino sempre volta…</p>
+
+<button class="btn-proximo" data-proximo="21">Viajar e buscar cura</button>
+</div>
+
+<!-- PASSO 16 — Elena + Damon -->
+<div class="passo" id="passo-16">
+<img src="img/clara22.jpg" alt="" style="width: 90%;">
+<p>O amor com Damon cresce, mas também os perigos.  
+O próximo passo é decisivo.</p>
+
+<button class="btn-proximo" data-proximo="21">Buscar a cura</button>
+</div>
+
+<!-- PASSO 17 — Caçadores -->
+<div class="passo" id="passo-17">
+<img src="img/clara23.jpeg" alt="" style="width: 90%;">
+<p>Os caçadores revelam a marca e novos mistérios.  
+Para onde seguir?</p>
+
+<button class="btn-proximo" data-proximo="22">Ilha da cura</button>
+</div>
+
+<!-- PASSO 18 — Apoiar Originais -->
+<div class="passo" id="passo-18">
+<img src="img/clara24.jpg" alt="" style="width: 90%;">
+<p>Com os Originais, você descobre mais sobre o destino da cura.  
+Próximo passo:</p>
+
+<button class="btn-proximo" data-proximo="22">Ir atrás da cura</button>
+</div>
+
+<!-- PASSO 19 — Cooperar com Originais -->
+<div class="passo" id="passo-19">
+<img src="img/clara12.jpg" alt="" style="width: 90%;">
+<p>A cooperação mantém a cidade viva, mas surge uma nova ameaça:  
+Os Viajantes.</p>
+
+<button class="btn-proximo" data-proximo="23">Enfrentar viajantes</button>
+</div>
+
+<!-- PASSO 20 — Abandoná-los -->
+<div class="passo" id="passo-20">
+<img src="img/clara25.webp" alt="" style="width: 90%;">
+<p>Sem aliados, os viajantes tomam a cidade.  
+Você precisa escolher:</p>
+
+<button class="btn-proximo" data-proximo="23">Lutar</button>
+</div>
+
+<!-- PASSO 21 — Em busca da cura -->
+<div class="passo" id="passo-21">
+<img src="img/clara27.webp" alt="" style="width: 90%;">
+<p>Na ilha, descobrimos perdas, traições e a verdade sobre Silas.</p>
+
+<button class="btn-proximo" data-proximo="24">Despertar Silas</button>
+<button class="btn-proximo" data-proximo="25">Impedir Silas</button>
+</div>
+
+<!-- PASSO 22 — Cura -->
+<div class="passo" id="passo-22">
+ <img src="img/clara26.webp" alt="" style="width: 90%;">
+<p>A cura muda tudo. Quem deve tomá-la?</p>
+
+<button class="btn-proximo" data-proximo="24">Elena</button>
+<button class="btn-proximo" data-proximo="25">Katherine</button>
+</div>
+
+<!-- PASSO 23 — Viajantes -->
+<div class="passo" id="passo-23">
+<img src="img/clara28.webp" alt="" style="width: 90%;">
+<p>Os viajantes quebram a magia.  
+Agora, um sacrifício será necessário.</p>
+
+<button class="btn-proximo" data-proximo="26">Damon</button>
+<button class="btn-proximo" data-proximo="27">Bonnie</button>
+</div>
+
+<!-- PASSO 24 — Silas desperto -->
+<div class="passo" id="passo-24">
+<img src="img/clara29.webp" alt="" style="width: 90%;">
+<p>Silas desperta e a cidade vive um caos.  
+Mas isso abre caminho para a chegada de algo pior:  
+Os Hereges.</p>
+
+<button class="btn-proximo" data-proximo="28">Seguir</button>
+</div>
+
+<!-- PASSO 25 — Silas impedido -->
+<div class="passo" id="passo-25">
+<img src="img/clara30.webp" alt="" style="width: 90%;">
+<p>A cura funciona, mas o Outro Lado começa a ruir.  
+Prepare-se para perdas emocionantes.</p>
+
+<button class="btn-proximo" data-proximo="28">Seguir</button>
+</div>
+
+<!-- PASSO 26 — Sacrifício Damon -->
+<div class="passo" id="passo-26">
+<img src="img/clara31.png" alt="" style="width: 90%;">
+<p>Damon se sacrifica, mas retorna graças a Bonnie.  
+O próximo grande desafio aparece: Lily e os Hereges.</p>
+
+<button class="btn-proximo" data-proximo="28">Continuar</button>
+</div>
+
+<!-- PASSO 27 — Sacrifício Bonnie -->
+<div class="passo" id="passo-27">
+<img src="img/clara32.webp" alt="" style="width: 90%;">
+<p>Bonnie morre e revive novamente, mas carrega magia instável.  
+Essa temporada muda tudo.</p>
+
+<button class="btn-proximo" data-proximo="28">Continuar</button>
+</div>
+
+<!-- PASSO 28 — Final (Temporada 8) -->
+<div class="passo" id="passo-28">
+<img src="img/clara33.jpg" alt="" style="width: 90%;">
+<img src="img/tvd-final.png" alt="">
+<p>O final chega:  
+A luta contra o vilão final define o destino de todos.  
+Você completou o mistério de TODA A SÉRIE!</p>
+</div>
+
 </main>
 <script src="script.js"></script>
 </body>
 </html>
+
