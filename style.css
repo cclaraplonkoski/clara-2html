@@ -62,3 +62,6 @@ img {
     margin-bottom: 20px;
     border-radius: 10px;
 }
+img {
+max-width: 90%;
+}
