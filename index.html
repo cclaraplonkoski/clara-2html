@@ -5,288 +5,114 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
 
-<title>Diários de um Vampiro – Fluxograma Interativo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600&display=swap"
+rel="stylesheet">
+
+<title>Escolhas de Crepúsculo</title>
 </head>
 
 <body>
 <main>
 
-<!-- PASSO 0 — Introdução -->
+<!-- PASSO 0 -->
 <div class="passo ativo" id="passo-0">
-<img src="img/clara2.png" alt="" style="width: 90%;">
-<p>Bem-vindo ao mundo de Diários de um Vampiro!  
-Aqui você vai seguir perguntas que percorrem TODA a série.  
-Pronto para começar?</p>
-
-<button class="btn-proximo" data-proximo="1">Começar</button>
-<button class="btn-proximo" data-proximo="2">Não, estou com medo</button>
+<img src="img/clara1.jpeg" alt="Floresta de Forks ao amanhecer">
+<p>Bella está prestes a começar sua história em Forks. Mas tudo depende da primeira decisão.</p>
+<button class="btn-proximo" data-proximo="1">Bella decide ir morar com o pai</button>
+<button class="btn-proximo" data-proximo="2">Bella decide ficar com a mãe</button>
 </div>
 
-<!-- PASSO 1 — Temporada 1 -->
+<!-- PASSO 1 -->
 <div class="passo" id="passo-1">
-<img src="img/clara3.jpg" alt="" style="width: 90%;">
-<p>Na 1ª temporada, Elena conhece os irmãos vampiros.  
-Com qual deles você acha que o rumo da história muda primeiro?</p>
-
-<button class="btn-proximo" data-proximo="3">Stefan</button>
-<button class="btn-proximo" data-proximo="4">Damon</button>
+<img src="img/casa_charlie.jpg" alt="Casa de Charlie em Forks">
+<p>Chegando em Forks, Bella precisa decidir como será seu primeiro dia.</p>
+<button class="btn-proximo" data-proximo="3">Explorar a cidade</button>
+<button class="btn-proximo" data-proximo="4">Ficar no quarto lendo</button>
 </div>
 
-<!-- PASSO 2 — Final alternativo (desistiu) -->
+<!-- PASSO 2 -->
 <div class="passo" id="passo-2">
-<img src="img/clara8.jpeg" alt="" style="width: 90%;"> 
-<p>Você desistiu! Mas todos sabemos que ninguém sai de Mystic Falls tão fácil…</p>
+<img src="img/phoenix.jpg" alt="Cidade ensolarada de Phoenix">
+<p>Ela fica em Phoenix, mas a rotina comum não traz nada novo.</p>
+<button class="btn-proximo" data-proximo="5">Repensar sua decisão e ir para Forks</button>
 </div>
 
-<!-- PASSO 3 — Stefan -->
+<!-- PASSO 3 -->
 <div class="passo" id="passo-3">
-<img src="img/clara7.jpg" alt="" style="width: 90%;">
-<p>Stefan tenta proteger Elena, mas o passado dos irmãos volta.  
-Qual ameaça domina essa fase?</p>
-
-<button class="btn-proximo" data-proximo="5">Katherine retorna</button>
-<button class="btn-proximo" data-proximo="6">Mistérios sobre o passado dos Salvatore</button>
+<img src="img/escola_forks.jpg" alt="Escola de Forks">
+<p>Na escola, ela vê Edward pela primeira vez. Como reagir?</p>
+<button class="btn-proximo" data-proximo="6">Ignorar e seguir a vida</button>
+<button class="btn-proximo" data-proximo="7">Tentar se aproximar</button>
 </div>
 
-<!-- PASSO 4 — Damon -->
+<!-- PASSO 4 -->
 <div class="passo" id="passo-4">
-<img src="img/clara10.jpg" alt="" style="width: 90%;">
-<p>Damon entra causando caos, mas desenvolve sentimentos por Elena.  
-Como você acha que isso muda a série?</p>
-
-<button class="btn-proximo" data-proximo="5">Triângulo amoroso explode</button>
-<button class="btn-proximo" data-proximo="6">Segredos dos vampiros antigos surgem</button>
+<img src="img/quarto_bella.jpg" alt="Quarto de Bella">
+<p>Ela fica em casa e perde o primeiro encontro com Edward.</p>
+<button class="btn-proximo" data-proximo="3">Ir para a escola no dia seguinte</button>
 </div>
 
-<!-- PASSO 5 — Temporada 2 / Katherine -->
+<!-- PASSO 5 -->
 <div class="passo" id="passo-5">
-<img src="img/clara11.webp" alt="" style="width: 90%;">
-<p>A 2ª temporada traz lobisomens, a pedra da lua e a duplicata.  
-Elena corre perigo! O que você escolhe?</p>
-
-<button class="btn-proximo" data-proximo="7">Confiar em Bonnie</button>
-<button class="btn-proximo" data-proximo="8">Confiar em Damon</button>
+<img src="img/forks_chuva.jpg" alt="Forks chuvoso">
+<p>Mesmo atrasada, Bella chega a Forks e seu destino começa a mudar.</p>
+<button class="btn-proximo" data-proximo="3">Ir para a escola</button>
 </div>
 
-<!-- PASSO 6 — Temporada 2 / Origem dos vampiros -->
+<!-- PASSO 6 -->
 <div class="passo" id="passo-6">
-<img src="img/clara12.jpg" alt="" style="width: 90%;">
-<p>Descobrimos mais sobre o passado dos vampiros e surgem os Originais.  
-Quem é a maior ameaça?</p>
-
-<button class="btn-proximo" data-proximo="9">Klaus</button>
-<button class="btn-proximo" data-proximo="10">Elijah</button>
+<img src="img/edward_longe.jpg" alt="Edward observando de longe">
+<p>Você tenta ignorar Edward, mas ele continua misterioso e cada vez mais intrigante.</p>
+<button class="btn-proximo" data-proximo="8">Falar com ele</button>
+<button class="btn-proximo" data-proximo="9">Continuar ignorando</button>
 </div>
 
-<!-- PASSO 7 — Temporada 3 / Feitiços -->
+<!-- PASSO 7 -->
 <div class="passo" id="passo-7">
-<img src="img/clara13.jpg" alt="" style="width: 90%;">
-<p>Bonnie tenta salvar todos, mas mexer com magia sempre tem consequências.  
-O que você prioriza?</p>
-
-<button class="btn-proximo" data-proximo="11">Salvar Elena</button>
-<button class="btn-proximo" data-proximo="12">Destruir Klaus</button>
+<img src="img/edward_cantina.jpg" alt="Edward olhando intensamente">
+<p>Você tenta se aproximar, mas a intensidade de Edward te deixa confusa.</p>
+<button class="btn-proximo" data-proximo="8">Insistir na conversa</button>
+<button class="btn-proximo" data-proximo="9">Desistir</button>
 </div>
 
-<!-- PASSO 8 — Temporada 3 / Escolha Damon -->
+<!-- PASSO 8 -->
 <div class="passo" id="passo-8">
-<img src="img/clara14.jpg" alt="" style="width: 90%;">
-<p>Damon tenta proteger Elena de Klaus, mas isso aproxima os dois.  
-O que você acha que é mais importante?</p>
-
-<button class="btn-proximo" data-proximo="11">Salvar Elena</button>
-<button class="btn-proximo" data-proximo="12">Acabar com Klaus</button>
+<img src="img/verdade_vampiro.jpg" alt="Edward revelando a verdade">
+<p>Edward revela a verdade: ele é um vampiro. O que fazer?</p>
+<button class="btn-proximo" data-proximo="10">Aceitar e continuar perto dele</button>
+<button class="btn-proximo" data-proximo="11">Se afastar completamente</button>
 </div>
 
-<!-- PASSO 9 — Klaus dominante -->
+<!-- PASSO 9 -->
 <div class="passo" id="passo-9">
-<img src="img/clara15.png" alt="" style="width: 90%;">
-<p>Klaus domina tudo na 3ª temporada.  
-Como você lida com ele?</p>
-
-<button class="btn-proximo" data-proximo="13">Aliança temporária</button>
-<button class="btn-proximo" data-proximo="14">Luta direta</button>
+<img src="img/sozinha_forks.jpg" alt="Bella caminhando sozinha">
+<p>Você tenta evitar Edward, mas a sensação de perigo aumenta.</p>
+<button class="btn-proximo" data-proximo="8">Confrontar Edward</button>
 </div>
 
-<!-- PASSO 10 — Elijah diplomata -->
+<!-- PASSO 10 -->
 <div class="passo" id="passo-10">
-<img src="img/clara16.jpg" alt="" style="width: 90%;">
-<p>Elijah tenta manter honra e equilíbrio.  
-Você confia nele?</p>
-
-<button class="btn-proximo" data-proximo="13">Sim</button>
-<button class="btn-proximo" data-proximo="14">Não</button>
+<img src="img/familia_cullen.jpg" alt="Família Cullen">
+<p>Você aceita a verdade e passa a conhecer o mundo dos Cullen.</p>
+<button class="btn-proximo" data-proximo="12">Entrar oficialmente para a vida deles</button>
 </div>
 
-<!-- PASSO 11 — Elena vira vampira -->
+<!-- PASSO 11 -->
 <div class="passo" id="passo-11">
-<img src="img/clara17.jpg" alt="" style="width: 90%;">
-<p>Na 4ª temporada, Elena vira vampira.  
-Como você acha que ela lida com isso?</p>
-
-<button class="btn-proximo" data-proximo="15">Com Stefan</button>
-<button class="btn-proximo" data-proximo="16">Com Damon</button>
+<img src="img/adeus.jpg" alt="Bella se afastando">
+<p>Você tenta se afastar, mas sente que deixou algo incompleto.</p>
 </div>
 
-<!-- PASSO 12 — Tentam destruir Klaus -->
+<!-- PASSO 12 -->
 <div class="passo" id="passo-12">
-<img src="img/clara19.webp" alt="" style="width: 90%;">
-<p>O plano para destruir Klaus falha e agora ele está ainda mais perigoso.  
-Pra onde seguir?</p>
-
-<button class="btn-proximo" data-proximo="17">Procurar os Caçadores</button>
-<button class="btn-proximo" data-proximo="18">Apoiar os Originais</button>
-</div>
-
-<!-- PASSO 13 — Aliança com Originais -->
-<div class="passo" id="passo-13">
-<img src="img/clara20.webp" alt="" style="width: 90%;">
-<p>Você se alia aos Originais para proteger a cidade.  
-O problema é: até quando confiar?</p>
-
-<button class="btn-proximo" data-proximo="19">Continuar com eles</button>
-<button class="btn-proximo" data-proximo="20">Abandoná-los</button>
-</div>
-
-<!-- PASSO 14 — Tentar lutar -->
-<div class="passo" id="passo-14">
-<img src="img/clara21.jpg alt=" style="width: 90%;">
-<p>A luta contra os Originais falha.
-Você precisa de uma nova estratégia.</p>
-
-<button class="btn-proximo" data-proximo="19">Cooperar com eles</button>
-</div>
-
-<!-- PASSO 15 — Elena + Stefan -->
-<div class="passo" id="passo-15">
-<img src="img/clara6.jpg" alt="" style="width: 90%;">
-<p>Elena tenta manter sua humanidade com Stefan.  
-Mas o destino sempre volta…</p>
-
-<button class="btn-proximo" data-proximo="21">Viajar e buscar cura</button>
-</div>
-
-<!-- PASSO 16 — Elena + Damon -->
-<div class="passo" id="passo-16">
-<img src="img/clara22.jpg" alt="" style="width: 90%;">
-<p>O amor com Damon cresce, mas também os perigos.  
-O próximo passo é decisivo.</p>
-
-<button class="btn-proximo" data-proximo="21">Buscar a cura</button>
-</div>
-
-<!-- PASSO 17 — Caçadores -->
-<div class="passo" id="passo-17">
-<img src="img/clara23.jpeg" alt="" style="width: 90%;">
-<p>Os caçadores revelam a marca e novos mistérios.  
-Para onde seguir?</p>
-
-<button class="btn-proximo" data-proximo="22">Ilha da cura</button>
-</div>
-
-<!-- PASSO 18 — Apoiar Originais -->
-<div class="passo" id="passo-18">
-<img src="img/clara24.jpg" alt="" style="width: 90%;">
-<p>Com os Originais, você descobre mais sobre o destino da cura.  
-Próximo passo:</p>
-
-<button class="btn-proximo" data-proximo="22">Ir atrás da cura</button>
-</div>
-
-<!-- PASSO 19 — Cooperar com Originais -->
-<div class="passo" id="passo-19">
-<img src="img/clara12.jpg" alt="" style="width: 90%;">
-<p>A cooperação mantém a cidade viva, mas surge uma nova ameaça:  
-Os Viajantes.</p>
-
-<button class="btn-proximo" data-proximo="23">Enfrentar viajantes</button>
-</div>
-
-<!-- PASSO 20 — Abandoná-los -->
-<div class="passo" id="passo-20">
-<img src="img/clara25.webp" alt="" style="width: 90%;">
-<p>Sem aliados, os viajantes tomam a cidade.  
-Você precisa escolher:</p>
-
-<button class="btn-proximo" data-proximo="23">Lutar</button>
-</div>
-
-<!-- PASSO 21 — Em busca da cura -->
-<div class="passo" id="passo-21">
-<img src="img/clara27.webp" alt="" style="width: 90%;">
-<p>Na ilha, descobrimos perdas, traições e a verdade sobre Silas.</p>
-
-<button class="btn-proximo" data-proximo="24">Despertar Silas</button>
-<button class="btn-proximo" data-proximo="25">Impedir Silas</button>
-</div>
-
-<!-- PASSO 22 — Cura -->
-<div class="passo" id="passo-22">
- <img src="img/clara26.webp" alt="" style="width: 90%;">
-<p>A cura muda tudo. Quem deve tomá-la?</p>
-
-<button class="btn-proximo" data-proximo="24">Elena</button>
-<button class="btn-proximo" data-proximo="25">Katherine</button>
-</div>
-
-<!-- PASSO 23 — Viajantes -->
-<div class="passo" id="passo-23">
-<img src="img/clara28.webp" alt="" style="width: 90%;">
-<p>Os viajantes quebram a magia.  
-Agora, um sacrifício será necessário.</p>
-
-<button class="btn-proximo" data-proximo="26">Damon</button>
-<button class="btn-proximo" data-proximo="27">Bonnie</button>
-</div>
-
-<!-- PASSO 24 — Silas desperto -->
-<div class="passo" id="passo-24">
-<img src="img/clara29.webp" alt="" style="width: 90%;">
-<p>Silas desperta e a cidade vive um caos.  
-Mas isso abre caminho para a chegada de algo pior:  
-Os Hereges.</p>
-
-<button class="btn-proximo" data-proximo="28">Seguir</button>
-</div>
-
-<!-- PASSO 25 — Silas impedido -->
-<div class="passo" id="passo-25">
-<img src="img/clara30.webp" alt="" style="width: 90%;">
-<p>A cura funciona, mas o Outro Lado começa a ruir.  
-Prepare-se para perdas emocionantes.</p>
-
-<button class="btn-proximo" data-proximo="28">Seguir</button>
-</div>
-
-<!-- PASSO 26 — Sacrifício Damon -->
-<div class="passo" id="passo-26">
-<img src="img/clara31.png" alt="" style="width: 90%;">
-<p>Damon se sacrifica, mas retorna graças a Bonnie.  
-O próximo grande desafio aparece: Lily e os Hereges.</p>
-
-<button class="btn-proximo" data-proximo="28">Continuar</button>
-</div>
-
-<!-- PASSO 27 — Sacrifício Bonnie -->
-<div class="passo" id="passo-27">
-<img src="img/clara32.webp" alt="" style="width: 90%;">
-<p>Bonnie morre e revive novamente, mas carrega magia instável.  
-Essa temporada muda tudo.</p>
-
-<button class="btn-proximo" data-proximo="28">Continuar</button>
-</div>
-
-<!-- PASSO 28 — Final (Temporada 8) -->
-<div class="passo" id="passo-28">
-<img src="img/clara33.jpg" alt="" style="width: 90%;">
-<img src="img/tvd-final.png" alt="">
-<p>O final chega:  
-A luta contra o vilão final define o destino de todos.  
-Você completou o mistério de TODA A SÉRIE!</p>
+<img src="img/crepusculo_final.jpg" alt="Bella e Edward juntos">
+<p>Você se aproxima de Edward e descobre um novo mundo — perigoso, mas apaixonante.</p>
 </div>
 
 </main>
 <script src="script.js"></script>
 </body>
 </html>
-
