@@ -1,67 +1,57 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Bai Jamjuree", sans-serif;
-}
-
 body {
-    background: #270000;
-    color: #fff;
-    min-height: 100vh;
+    background-color: #0F0F0F; /* Preto suave crepuscular */
+    color: #E8E8E8;
+    font-family: "Bai Jamjuree", sans-serif;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    align-items: center;
+    height: 700px;
+    margin: 0;
+
+    /* leve névoa */
+    background-image: radial-gradient(circle at center, #1a1a1a 0%, #0f0f0f 70%);
 }
 
-main {
-    width: 100%;
-    max-width: 700px;
+button {
+    background-color: #2A2F33; /* Cinza frio Forks */
+    color: #ffffff;
+    font-family: "Bai Jamjuree", sans-serif;
+    border: 1px solid #5A646B;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* efeito vampiresco sutil */
+button:hover {
+    background-color: #3B4349;
+    border-color: #7C8A92;
+    transform: scale(1.06);
 }
 
 .passo {
     display: none;
-    text-align: center;
-    animation: fade 0.4s ease;
 }
 
 .passo.ativo {
     display: block;
 }
 
-@keyframes fade {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
+main {
+    text-align: center;
+    max-width: 90%;
+    padding: 25px;
 
-p {
-    margin-bottom: 20px;
-    font-size: 18px;
-    line-height: 1.5em;
-}
-
-button {
-    display: block;
-    margin: 10px auto;
-    padding: 12px 25px;
-    border: none;
-    background: #680101;
-    color: #fff;
-    font-size: 17px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    background: #5f0d0d;
+    /* caixa com vibe crepúsculo */
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    box-shadow: 0 0 12px rgba(255,255,255,0.06);
 }
 
 img {
-    max-width: 100%;
-    margin-bottom: 20px;
+    max-width: 90%;
     border-radius: 10px;
-}
-img {
-max-width: 90%;
+    box-shadow: 0 0 12px rgba(255,255,255,0.10);
 }
